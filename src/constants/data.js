@@ -1,7 +1,8 @@
 export const data = [
   {
     title: 'Work',
-    timeframes: {
+    icon: 'Work',
+    timeFrames: {
       daily: {
         current: 5,
         previous: 7,
@@ -18,7 +19,8 @@ export const data = [
   },
   {
     title: 'Play',
-    timeframes: {
+    icon: 'Play',
+    timeFrames: {
       daily: {
         current: 1,
         previous: 2,
@@ -35,7 +37,8 @@ export const data = [
   },
   {
     title: 'Study',
-    timeframes: {
+    icon: 'Study',
+    timeFrames: {
       daily: {
         current: 0,
         previous: 1,
@@ -52,7 +55,8 @@ export const data = [
   },
   {
     title: 'Exercise',
-    timeframes: {
+    icon: 'Exercise',
+    timeFrames: {
       daily: {
         current: 1,
         previous: 1,
@@ -69,7 +73,8 @@ export const data = [
   },
   {
     title: 'Social',
-    timeframes: {
+    icon: 'Social',
+    timeFrames: {
       daily: {
         current: 1,
         previous: 3,
@@ -86,7 +91,8 @@ export const data = [
   },
   {
     title: 'Self Care',
-    timeframes: {
+    icon: 'Self Care',
+    timeFrames: {
       daily: {
         current: 0,
         previous: 1,

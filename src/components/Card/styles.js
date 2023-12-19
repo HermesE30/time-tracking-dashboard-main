@@ -25,7 +25,7 @@ const SelectStyle = {
 };
 
 export const CardContainer = styled.div`
-  width: 257px;
+  width: 100%;
   height: 244px;
   max-height: 254px;
   display: flex;
@@ -43,6 +43,10 @@ export const CardContainer = styled.div`
       default: return SelectStyle.selfCare;
     }
   }}
+
+  @media (max-width: 820px) {
+    width: 100%;
+  }
 `;
 
 export const IconContainer = styled.div`
@@ -52,7 +56,7 @@ export const IconContainer = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 257px;
+  width: 100%;
   height: 200px;
   max-height: 200px;
   padding: 28px 30px;
@@ -64,6 +68,10 @@ export const Content = styled.div`
     background: ${defaultTheme.colorDesaturatedBlue};
     cursor: pointer;
   }
+
+  @media (max-width: 820px) {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.div`
@@ -73,8 +81,16 @@ export const Title = styled.div`
   color: ${colorText};
 `;
 
-export const Timeframes = styled.div`
+export const TimeFrames = styled.div`
+  display: flex;
+  flex-direction: column;
   margin-top: 24px;
+
+  @media (max-width: 820px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 
 export const Current = styled.p`

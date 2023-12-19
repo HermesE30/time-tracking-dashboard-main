@@ -5,13 +5,18 @@ const colorText = '#FFF';
 
 export const CardContainer = styled.div`
   width: 257px;
-  height: 518px;
-  max-height: 518px;
+  height: 498px;
+  max-height: 498px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   border-radius: ${borderRadius.bRadius};
   background: ${defaultTheme.colorDarkBlue};
+
+  @media (max-width: 820px) {
+    width: 100%;
+    height: fit-content;
+  }
 `;
 
 export const Avatar = styled.img`
@@ -47,6 +52,14 @@ export const Content = styled.div`
   gap: 52px;
   border-radius: ${borderRadius.bRadius};
   background: ${defaultTheme.colorBlue};
+
+  @media (max-width: 820px) {
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    align-items: center;
+    gap: 22px;
+  }
 `;
 
 export const Navigation = styled.div`
@@ -54,6 +67,12 @@ export const Navigation = styled.div`
   padding: 30px;
   flex-direction: column;
   gap: 18px;
+
+  @media (max-width: 820px) {
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+  }
 `;
 
 export const Item = styled.p`

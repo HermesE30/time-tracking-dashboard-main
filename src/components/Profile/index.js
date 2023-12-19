@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
-import * as Styled from './styles';
+import {
+  Avatar,
+  CardContainer,
+  Content,
+  Item,
+  Navigation,
+  Title,
+  User,
+  Username,
+} from './styles';
 
 export default function Profile({
   /**
@@ -10,7 +19,7 @@ export default function Profile({
    * name of user
    */
   username,
-  /** propagate on clcik event */
+  /** propagate on click event */
   onClick,
   /**
    * recebe um array de string
@@ -27,30 +36,25 @@ export default function Profile({
   }
 
   return (
-    <Styled.CardContainer>
-      <Styled.Content>
-        <Styled.Avatar
-          src={avatar}
-          align={username}
-        />
-        <Styled.User>
-          <Styled.Title>
-            Report for
-          </Styled.Title>
-          <Styled.Username>
-            {username}
-          </Styled.Username>
-        </Styled.User>
-      </Styled.Content>
-      <Styled.Navigation>
-        {
-          navigationItems.map((nav) => (
-            <Styled.Item active={isActive === nav} onClick={() => handleClick(nav)}>
-              {nav}
-            </Styled.Item>
-          ))
-        }
-      </Styled.Navigation>
-    </Styled.CardContainer>
+    <CardContainer>
+      <Content>
+        <Avatar src={avatar} align={username} />
+        <User>
+          <Title>Report for</Title>
+          <Username>{username}</Username>
+        </User>
+      </Content>
+      <Navigation>
+        {navigationItems.map((nav, index) => (
+          <Item
+            key={nav + index}
+            active={isActive === nav}
+            onClick={() => handleClick(nav)}
+          >
+            {nav}
+          </Item>
+        ))}
+      </Navigation>
+    </CardContainer>
   );
 }
