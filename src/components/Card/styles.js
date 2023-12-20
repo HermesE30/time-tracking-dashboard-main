@@ -25,7 +25,7 @@ const SelectStyle = {
 };
 
 export const CardContainer = styled.div`
-  width: 100%;
+  min-width: 257px;
   height: 244px;
   max-height: 254px;
   display: flex;
@@ -45,7 +45,7 @@ export const CardContainer = styled.div`
   }}
 
   @media (max-width: 820px) {
-    width: 100%;
+    min-width: 100%;
   }
 `;
 
@@ -56,7 +56,7 @@ export const IconContainer = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 100%;
+  min-width: 257px;
   height: 200px;
   max-height: 200px;
   padding: 28px 30px;
@@ -69,7 +69,7 @@ export const Content = styled.div`
   }
 
   @media (max-width: 820px) {
-    width: 100%;
+    min-width: 100%;
   }
 `;
 
