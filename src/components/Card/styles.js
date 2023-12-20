@@ -63,7 +63,6 @@ export const Content = styled.div`
   z-index: 2;
   border-radius: ${borderRadius.bRadius};
   background: ${defaultTheme.colorDarkBlue};
-
   &:hover {
     background: ${defaultTheme.colorDesaturatedBlue};
     cursor: pointer;
